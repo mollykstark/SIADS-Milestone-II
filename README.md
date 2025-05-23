@@ -7,8 +7,11 @@ SIADS-MILESTONE-1
 └───src
     ├───data
     │   │   met_raw.csv    <-- temporary
+    │   └───interim
+    │       │   countries.csv
     │       
     └───notebooks
+        │   country_name.py
         │   MET_data_cleaning.ipynb
         │   MET_data_cleaning_old.ipynb    <-- temporary
 ```
