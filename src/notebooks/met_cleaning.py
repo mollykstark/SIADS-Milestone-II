@@ -49,12 +49,15 @@ def clean_met_data() -> pd.DataFrame:
                                     }}, regex=True)
 
     met['extracted_date'] = met['object_date'].str.findall(r'\d{4}').str[0]
+    met['access_year'] = met['accession_year'].astype(str).str.findall(r'\d{4}').str[0]
 
-    met = met.where(met['artist_gender'].isna(), "1")
-    met = met.where(~met['artist_gender'].isna(), "0")
+    met['artist_gender'] = met['artist_gender'].replace(False, "0")
+    met['artist_gender'] = met['artist_gender'].replace(True, "1")
+
+    met.loc[:,'tags'] = met['tags'].str.split(pat="|")
 
     met = met[['is_significant', 'is_public_domain',
-            'department', 'accession_year', 'object_name',
+            'department', 'access_year', 'object_name',
             'title', 'culture', 'portfolio',
             'artist_display_name', 
             'artist_nationality', 
