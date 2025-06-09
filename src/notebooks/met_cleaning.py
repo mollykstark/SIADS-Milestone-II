@@ -1,5 +1,5 @@
 """
-Python Script to create a column labeling the country of origin for MET artworks.
+Python Script to clean raw MET data in preparation for data preprocessing and model training.
 """
 import warnings
 from country_name import determine_met_country_names
@@ -9,14 +9,13 @@ warnings.filterwarnings('ignore')
 
 def clean_met_data() -> pd.DataFrame:
     """
-    Function to create a column labeling the country of origin for MET artworks.
+    Function to clean raw MET data in preparation for data preprocessing and model training.
 
     Args:
         None
 
     Returns:
-        Pandas DataFrame:A Pandas dataframe containing the 
-        original dataframe with the additional country column.
+        met: A Pandas dataframe containing the clean MET dataframe.
     """
 
     # Read in full dataset from MET github
@@ -56,18 +55,6 @@ def clean_met_data() -> pd.DataFrame:
     met = determine_met_country_names(met, "../data/helper/countries.csv")
 
     met['is_significant'] = met['is_timeline_work'] | met['is_highlight']
-
-    met = met.replace({'object_date':{"–":"-", " ":"", "ca.":"", "before":"","after":"","edition":
-                                      "","()":"","probably":"", "Probably":"","early":"", "late":"",
-                                        r'\?':"","20thcentury":"1900", "19thcentury":"1800",
-                                        "18thcentury":"1700", "17thcentury":"1600", "16thcentury":
-                                        "1500","15thcentury":"1400", "14thcentury":"1300", 
-                                        "13thcentury":"1200", "12thcentury":"1100", "11thcentury":
-                                        "1000","10thcentury":"1400", "9thcentury":"1300",
-                                        "8thcentury":"1200", "7thcentury":"1100", "6thcentury":
-                                        "1000","5thcentury":"400", "4thcentury":"300", "3rdcentury":
-                                        "200", "2ndcentury":"100", "1stcentury":"0000","by":"",
-                                        "or":"-",}}, regex=True)
 
     met['age'] = 2025 - pd.to_numeric(met['object_begin_date'])
     met['access_year'] = met['accession_year'].astype(str).str.findall(r'\d{4}').str[0]

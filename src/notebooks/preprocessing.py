@@ -1,9 +1,9 @@
 """
-Python Script to create a column labeling the country of origin for MET artworks.
+Python Script to preprocess MET data before training supervised and unsupervised models.
 """
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
-from sklearn.feature_extraction.text import TfidfVectorizer
+# from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
@@ -20,8 +20,8 @@ categorical_transformer = Pipeline(steps=[('imputer', SimpleImputer(strategy="co
                                                                     fill_value="missing")),
                                     ('onehot', OneHotEncoder(handle_unknown="ignore"))])
 
-tag_features = ['tags']
-tag_transformer = Pipeline(steps=[('tfidf', TfidfVectorizer())])
+# tag_features = ['tags']
+# tag_transformer = Pipeline(steps=[('tfidf', TfidfVectorizer())])
 
 preprocessor = ColumnTransformer(
     transformers=[
@@ -34,6 +34,18 @@ preprocessor = ColumnTransformer(
 smote = SMOTE(random_state=42)
 
 def supervised_preprocessing(df):
+    """
+    Function to preprocess data before training a supervised model.
+
+    Args:
+        df: A Pandas dataframe of cleaned MET data
+
+    Returns:
+        X_train, X_test, y_train, y_test: Preprocessed df data split into 
+                                          labels and features, and train and test sets.
+        X_train_resampled, y_train_resampled: X_train and y_train after 
+                                              undergoing oversampling using SMOTE.
+    """
     X = df.drop('is_significant', axis=1)
     y = df['is_significant']
 
@@ -44,6 +56,15 @@ def supervised_preprocessing(df):
     return X_train, X_test, y_train, y_test, X_train_resampled, y_train_resampled
 
 def unsupervised_preprocessing(df):
+    """
+    Function to preprocess data before training an unsupervised model.
+
+    Args:
+        df: A Pandas dataframe of cleaned MET data
+
+    Returns:
+        X: The preprocessed version of df without the label column.
+    """
     X = df.drop('is_significant', axis=1)
     X = preprocessor.fit_transform(X)
     return X
