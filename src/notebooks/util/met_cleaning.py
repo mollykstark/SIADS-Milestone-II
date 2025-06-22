@@ -179,7 +179,7 @@ def determine_met_country_names(met_df: pd.DataFrame, file_path: str) -> pd.Data
         regex=True,
     )
 
-    met_df.loc[:,"mapped_country"] = met_df.loc[:,"combined_country"].map(country_map)
+    met_df.loc[:,"country_mapped"] = met_df.loc[:,"combined_country"].map(country_map)
 
     return met_df
 
@@ -245,7 +245,7 @@ def clean_met_data() -> pd.DataFrame:
             'title', 'culture', 'portfolio',
             'artist_display_name', 
             'artist_nationality', 
-            'artist_gender', 'mapped_country',
+            'artist_gender', 'country_mapped',
             'age',  'medium', 'tags']]
 
     return met
