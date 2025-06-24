@@ -1,0 +1,123 @@
+Fitting 5 folds for each of 20 candidates, totalling 100 fits
+[CV 4/5] END C=100, max_iter=5000, penalty=l1, tol=0.01;, score=0.979 total time=   5.5s
+[CV 1/5] END C=100, max_iter=5000, penalty=l1, tol=0.01;, score=0.979 total time=   6.3s
+[CV 2/5] END C=100, max_iter=5000, penalty=l1, tol=0.01;, score=0.979 total time=   6.4s
+[CV 3/5] END C=100, max_iter=5000, penalty=l1, tol=0.01;, score=0.979 total time=   6.9s
+[CV 5/5] END C=100, max_iter=5000, penalty=l1, tol=0.01;, score=0.980 total time=   7.0s
+[CV 2/5] END C=0.001, max_iter=1000, penalty=l1, tol=0.001;, score=0.772 total time=  42.8s
+[CV 1/5] END C=0.001, max_iter=1000, penalty=l1, tol=0.001;, score=0.772 total time=  43.7s
+[CV 4/5] END C=0.001, max_iter=1000, penalty=l1, tol=0.001;, score=0.774 total time=  44.5s
+[CV 3/5] END C=0.001, max_iter=1000, penalty=l1, tol=0.001;, score=0.772 total time=  45.7s
+[CV 5/5] END C=0.001, max_iter=1000, penalty=l1, tol=0.001;, score=0.773 total time=  48.6s
+[CV 2/5] END C=0.1, max_iter=10000, penalty=l1, tol=0.001;, score=0.982 total time=  56.4s
+[CV 5/5] END C=0.1, max_iter=10000, penalty=l1, tol=0.001;, score=0.982 total time=  56.2s
+[CV 3/5] END C=0.1, max_iter=10000, penalty=l1, tol=0.001;, score=0.982 total time=  57.6s
+[CV 4/5] END C=0.1, max_iter=10000, penalty=l1, tol=0.001;, score=0.982 total time=  58.4s
+[CV 1/5] END C=0.1, max_iter=10000, penalty=l1, tol=0.001;, score=0.982 total time= 1.0min
+[CV 1/5] END C=1, max_iter=1000, penalty=l1, tol=0.001;, score=0.991 total time= 1.4min
+[CV 2/5] END C=1, max_iter=1000, penalty=l1, tol=0.001;, score=0.991 total time= 1.4min
+[CV 5/5] END C=1, max_iter=1000, penalty=l1, tol=0.001;, score=0.991 total time= 1.4min
+[CV 4/5] END C=1, max_iter=1000, penalty=l1, tol=0.001;, score=0.991 total time= 1.5min
+[CV 3/5] END C=1, max_iter=1000, penalty=l1, tol=0.001;, score=0.991 total time= 1.5min
+[CV 1/5] END C=0.001, max_iter=10000, penalty=l1, tol=0.001;, score=0.772 total time=  35.1s
+[CV 4/5] END C=1, max_iter=1000, penalty=l2, tol=0.01;, score=0.986 total time=  56.9s
+[CV 4/5] END C=0.001, max_iter=10000, penalty=l1, tol=0.001;, score=0.774 total time=  35.4s
+[CV 3/5] END C=0.001, max_iter=10000, penalty=l1, tol=0.001;, score=0.772 total time=  36.9s
+[CV 2/5] END C=0.001, max_iter=10000, penalty=l1, tol=0.001;, score=0.772 total time=  37.3s
+[CV 1/5] END C=1, max_iter=1000, penalty=l2, tol=0.01;, score=0.987 total time= 1.1min
+[CV 5/5] END C=0.001, max_iter=10000, penalty=l1, tol=0.001;, score=0.773 total time=  40.6s
+[CV 5/5] END C=1, max_iter=1000, penalty=l2, tol=0.01;, score=0.985 total time= 1.0min
+[CV 2/5] END C=1, max_iter=1000, penalty=l2, tol=0.01;, score=0.987 total time= 1.2min
+[CV 3/5] END C=0.01, max_iter=10000, penalty=l2, tol=0.01;, score=0.955 total time=  20.2s
+[CV 4/5] END C=0.01, max_iter=10000, penalty=l2, tol=0.01;, score=0.955 total time=  22.5s
+[CV 5/5] END C=0.01, max_iter=10000, penalty=l2, tol=0.01;, score=0.956 total time=  22.2s
+[CV 1/5] END C=0.01, max_iter=10000, penalty=l2, tol=0.01;, score=0.955 total time=  29.2s
+[CV 2/5] END C=0.01, max_iter=10000, penalty=l2, tol=0.01;, score=0.956 total time=  29.3s
+[CV 3/5] END C=1, max_iter=1000, penalty=l2, tol=0.01;, score=0.987 total time= 1.5min
+[CV 1/5] END C=0.01, max_iter=5000, penalty=l1, tol=0.01;, score=0.865 total time=   9.2s
+[CV 2/5] END C=0.01, max_iter=5000, penalty=l1, tol=0.01;, score=0.868 total time=  10.7s
+[CV 3/5] END C=0.01, max_iter=5000, penalty=l1, tol=0.01;, score=0.867 total time=  11.3s
+[CV 1/5] END C=0.0001, max_iter=1000, penalty=l2, tol=0.001;, score=0.776 total time=   4.4s
+[CV 2/5] END C=0.0001, max_iter=1000, penalty=l2, tol=0.001;, score=0.777 total time=   5.6s
+[CV 4/5] END C=0.01, max_iter=5000, penalty=l1, tol=0.01;, score=0.868 total time=  10.8s
+[CV 3/5] END C=0.0001, max_iter=1000, penalty=l2, tol=0.001;, score=0.776 total time=   4.3s
+[CV 5/5] END C=0.01, max_iter=5000, penalty=l1, tol=0.01;, score=0.867 total time=  10.5s
+[CV 4/5] END C=0.0001, max_iter=1000, penalty=l2, tol=0.001;, score=0.777 total time=   5.8s
+[CV 5/5] END C=0.0001, max_iter=1000, penalty=l2, tol=0.001;, score=0.776 total time=   5.7s
+[CV 1/5] END C=10, max_iter=10000, penalty=l1, tol=0.01;, score=0.987 total time=   9.1s
+[CV 2/5] END C=10, max_iter=10000, penalty=l1, tol=0.01;, score=0.987 total time=   9.3s
+[CV 3/5] END C=10, max_iter=10000, penalty=l1, tol=0.01;, score=0.987 total time=   9.9s
+[CV 4/5] END C=10, max_iter=10000, penalty=l1, tol=0.01;, score=0.987 total time=  10.7s
+[CV 5/5] END C=10, max_iter=10000, penalty=l1, tol=0.01;, score=0.987 total time=   9.8s
+/root/venv/lib/python3.11/site-packages/sklearn/svm/_base.py:1249: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+[CV 1/5] END C=0.01, max_iter=1000, penalty=l1, tol=0.0001;, score=0.863 total time= 1.6min
+[CV 3/5] END C=10, max_iter=1000, penalty=l2, tol=0.001;, score=0.990 total time= 3.7min
+/root/venv/lib/python3.11/site-packages/sklearn/svm/_base.py:1249: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+[CV 2/5] END C=0.01, max_iter=1000, penalty=l1, tol=0.0001;, score=0.866 total time= 1.6min
+/root/venv/lib/python3.11/site-packages/sklearn/svm/_base.py:1249: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+[CV 3/5] END C=0.01, max_iter=1000, penalty=l1, tol=0.0001;, score=0.865 total time= 1.7min
+/root/venv/lib/python3.11/site-packages/sklearn/svm/_base.py:1249: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+[CV 5/5] END C=0.01, max_iter=1000, penalty=l1, tol=0.0001;, score=0.865 total time= 1.7min
+/root/venv/lib/python3.11/site-packages/sklearn/svm/_base.py:1249: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+[CV 4/5] END C=0.01, max_iter=1000, penalty=l1, tol=0.0001;, score=0.866 total time= 1.8min
+[CV 5/5] END C=10, max_iter=1000, penalty=l2, tol=0.001;, score=0.990 total time= 5.2min
+[CV 1/5] END C=10, max_iter=5000, penalty=l1, tol=0.001;, score=0.990 total time= 1.6min
+[CV 3/5] END C=10, max_iter=5000, penalty=l1, tol=0.001;, score=0.990 total time= 1.6min
+[CV 2/5] END C=10, max_iter=1000, penalty=l2, tol=0.001;, score=0.991 total time= 5.4min
+[CV 2/5] END C=10, max_iter=5000, penalty=l1, tol=0.001;, score=0.991 total time= 1.7min
+[CV 4/5] END C=10, max_iter=5000, penalty=l1, tol=0.001;, score=0.990 total time= 1.7min
+[CV 5/5] END C=10, max_iter=5000, penalty=l1, tol=0.001;, score=0.990 total time= 1.7min
+[CV 1/5] END C=0.001, max_iter=1000, penalty=l1, tol=0.0001;, score=0.773 total time= 1.3min
+[CV 2/5] END C=0.001, max_iter=1000, penalty=l1, tol=0.0001;, score=0.772 total time= 1.3min
+/root/venv/lib/python3.11/site-packages/sklearn/svm/_base.py:1249: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+[CV 3/5] END C=0.001, max_iter=1000, penalty=l1, tol=0.0001;, score=0.772 total time= 1.3min
+[CV 4/5] END C=0.001, max_iter=1000, penalty=l1, tol=0.0001;, score=0.774 total time= 1.2min
+[CV 5/5] END C=0.001, max_iter=1000, penalty=l1, tol=0.0001;, score=0.773 total time= 1.3min
+[CV 1/5] END C=10, max_iter=1000, penalty=l1, tol=0.001;, score=0.990 total time= 1.7min
+[CV 2/5] END C=10, max_iter=1000, penalty=l1, tol=0.001;, score=0.991 total time= 1.8min
+[CV 3/5] END C=10, max_iter=1000, penalty=l1, tol=0.001;, score=0.990 total time= 1.8min
+[CV 1/5] END C=0.0001, max_iter=5000, penalty=l2, tol=0.001;, score=0.776 total time=   4.1s
+[CV 2/5] END C=0.0001, max_iter=5000, penalty=l2, tol=0.001;, score=0.777 total time=   6.1s
+[CV 3/5] END C=0.0001, max_iter=5000, penalty=l2, tol=0.001;, score=0.776 total time=   4.6s
+[CV 4/5] END C=0.0001, max_iter=5000, penalty=l2, tol=0.001;, score=0.777 total time=   6.2s
+[CV 5/5] END C=0.0001, max_iter=5000, penalty=l2, tol=0.001;, score=0.776 total time=   5.9s
+[CV 4/5] END C=10, max_iter=1000, penalty=l1, tol=0.001;, score=0.990 total time= 1.8min
+[CV 2/5] END C=0.1, max_iter=1000, penalty=l1, tol=0.001;, score=0.982 total time=  49.2s
+[CV 1/5] END C=0.1, max_iter=1000, penalty=l1, tol=0.001;, score=0.982 total time=  55.9s
+[CV 5/5] END C=10, max_iter=1000, penalty=l1, tol=0.001;, score=0.990 total time= 1.8min
+[CV 4/5] END C=10, max_iter=1000, penalty=l2, tol=0.001;, score=0.991 total time=11.6min
+[CV 1/5] END C=0.0001, max_iter=5000, penalty=l2, tol=0.01;, score=0.776 total time=   4.8s
+[CV 1/5] END C=10, max_iter=1000, penalty=l2, tol=0.001;, score=0.991 total time=11.8min
+[CV 2/5] END C=0.0001, max_iter=5000, penalty=l2, tol=0.01;, score=0.777 total time=   4.6s
+[CV 3/5] END C=0.0001, max_iter=5000, penalty=l2, tol=0.01;, score=0.776 total time=   5.0s
+[CV 4/5] END C=0.0001, max_iter=5000, penalty=l2, tol=0.01;, score=0.777 total time=   4.7s
+[CV 5/5] END C=0.0001, max_iter=5000, penalty=l2, tol=0.01;, score=0.776 total time=   4.8s
+[CV 3/5] END C=0.1, max_iter=1000, penalty=l1, tol=0.001;, score=0.982 total time=  44.8s
+[CV 4/5] END C=0.1, max_iter=1000, penalty=l1, tol=0.001;, score=0.982 total time=  54.5s
+[CV 5/5] END C=0.1, max_iter=1000, penalty=l1, tol=0.001;, score=0.982 total time=  49.6s
+[CV 1/5] END C=1, max_iter=5000, penalty=l1, tol=0.0001;, score=0.991 total time= 9.1min
+[CV 3/5] END C=1, max_iter=5000, penalty=l1, tol=0.0001;, score=0.991 total time= 8.2min
+[CV 5/5] END C=1, max_iter=5000, penalty=l1, tol=0.0001;, score=0.991 total time= 8.8min
+[CV 2/5] END C=1, max_iter=5000, penalty=l1, tol=0.0001;, score=0.991 total time= 9.2min
+[CV 4/5] END C=1, max_iter=5000, penalty=l1, tol=0.0001;, score=0.991 total time= 9.2min
+/root/venv/lib/python3.11/site-packages/sklearn/svm/_base.py:1249: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+[CV 2/5] END C=100, max_iter=5000, penalty=l2, tol=0.0001;, score=0.991 total time=29.8min
+/root/venv/lib/python3.11/site-packages/sklearn/svm/_base.py:1249: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+[CV 5/5] END C=100, max_iter=5000, penalty=l2, tol=0.0001;, score=0.990 total time=31.4min
+/root/venv/lib/python3.11/site-packages/sklearn/svm/_base.py:1249: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+[CV 4/5] END C=100, max_iter=5000, penalty=l2, tol=0.0001;, score=0.990 total time=32.8min
+/root/venv/lib/python3.11/site-packages/sklearn/svm/_base.py:1249: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+[CV 3/5] END C=100, max_iter=5000, penalty=l2, tol=0.0001;, score=0.990 total time=33.0min
+/root/venv/lib/python3.11/site-packages/sklearn/svm/_base.py:1249: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+[CV 1/5] END C=100, max_iter=5000, penalty=l2, tol=0.0001;, score=0.990 total time=33.4min

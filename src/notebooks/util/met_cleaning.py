@@ -240,12 +240,9 @@ def clean_met_data() -> pd.DataFrame:
 
     met.loc[:,'tags'] = met['tags'].str.split(pat="|")
 
-    met = met[['is_significant', 'is_public_domain',
-            'department', 'access_year', 'object_name',
-            'title', 'culture', 'portfolio',
-            'artist_display_name', 
-            'artist_nationality', 
-            'artist_gender', 'country_mapped',
-            'age',  'medium', 'tags']]
+    met = met[['is_significant','department','object_name','title','portfolio',
+                        'artist_display_name','country_mapped',
+                        'medium', 'artist_gender','culture','artist_nationality',
+                        'access_year', 'age']]
 
     return met

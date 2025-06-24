@@ -1,0 +1,106 @@
+Fitting 5 folds for each of 20 candidates, totalling 100 fits
+[CV 2/5] END C=0.0001, max_iter=5000, penalty=l2, solver=saga, tol=0.001;, score=0.744 total time=   9.6s
+[CV 4/5] END C=0.0001, max_iter=5000, penalty=l2, solver=saga, tol=0.001;, score=0.744 total time=   9.8s
+[CV 3/5] END C=0.0001, max_iter=1000, penalty=l2, solver=saga, tol=0.001;, score=0.744 total time=  10.2s
+[CV 5/5] END C=0.0001, max_iter=5000, penalty=l2, solver=saga, tol=0.001;, score=0.744 total time=  10.2s
+[CV 1/5] END C=0.0001, max_iter=1000, penalty=l2, solver=saga, tol=0.001;, score=0.743 total time=  10.3s
+[CV 1/5] END C=0.0001, max_iter=5000, penalty=l2, solver=saga, tol=0.001;, score=0.743 total time=  10.1s
+[CV 2/5] END C=0.0001, max_iter=1000, penalty=l2, solver=saga, tol=0.001;, score=0.744 total time=  10.2s
+[CV 4/5] END C=0.0001, max_iter=1000, penalty=l2, solver=saga, tol=0.001;, score=0.744 total time=  10.3s
+[CV 3/5] END C=0.0001, max_iter=5000, penalty=l2, solver=saga, tol=0.001;, score=0.744 total time=  10.4s
+[CV 5/5] END C=0.0001, max_iter=1000, penalty=l2, solver=saga, tol=0.001;, score=0.744 total time=  10.5s
+[CV 3/5] END C=1, max_iter=1000, penalty=l2, solver=saga, tol=0.01;, score=0.803 total time=  40.6s
+[CV 5/5] END C=1, max_iter=1000, penalty=l2, solver=saga, tol=0.01;, score=0.803 total time=  40.8s
+[CV 2/5] END C=1, max_iter=1000, penalty=l2, solver=saga, tol=0.01;, score=0.803 total time=  41.1s
+[CV 1/5] END C=1, max_iter=1000, penalty=l2, solver=saga, tol=0.01;, score=0.804 total time=  41.8s
+[CV 4/5] END C=1, max_iter=1000, penalty=l2, solver=saga, tol=0.01;, score=0.804 total time=  41.4s
+[CV 2/5] END C=1, max_iter=5000, penalty=l2, solver=saga, tol=0.01;, score=0.803 total time=  40.3s
+[CV 1/5] END C=1, max_iter=5000, penalty=l2, solver=saga, tol=0.01;, score=0.804 total time=  40.7s
+[CV 4/5] END C=1, max_iter=5000, penalty=l2, solver=saga, tol=0.01;, score=0.804 total time=  40.5s
+[CV 3/5] END C=1, max_iter=5000, penalty=l2, solver=saga, tol=0.01;, score=0.803 total time=  41.0s
+[CV 5/5] END C=1, max_iter=5000, penalty=l2, solver=saga, tol=0.01;, score=0.803 total time=  40.9s
+[CV 1/5] END C=0.001, max_iter=10000, penalty=l1, solver=saga, tol=0.0001;, score=0.750 total time=22.1min
+[CV 5/5] END C=0.001, max_iter=10000, penalty=l1, solver=saga, tol=0.0001;, score=0.751 total time=22.1min
+[CV 3/5] END C=0.001, max_iter=10000, penalty=l1, solver=saga, tol=0.0001;, score=0.750 total time=22.3min
+[CV 4/5] END C=0.001, max_iter=10000, penalty=l1, solver=saga, tol=0.0001;, score=0.753 total time=22.4min
+[CV 2/5] END C=0.001, max_iter=10000, penalty=l1, solver=saga, tol=0.0001;, score=0.750 total time=23.1min
+[CV 2/5] END C=0.1, max_iter=5000, penalty=l1, solver=saga, tol=0.01;, score=0.795 total time=28.2min
+[CV 5/5] END C=0.1, max_iter=5000, penalty=l1, solver=saga, tol=0.01;, score=0.795 total time=28.2min
+[CV 3/5] END C=0.1, max_iter=5000, penalty=l1, solver=saga, tol=0.01;, score=0.794 total time=28.2min
+[CV 4/5] END C=0.1, max_iter=5000, penalty=l1, solver=saga, tol=0.01;, score=0.797 total time=28.2min
+[CV 1/5] END C=0.1, max_iter=5000, penalty=l1, solver=saga, tol=0.01;, score=0.796 total time=28.3min
+[CV 1/5] END C=0.01, max_iter=5000, penalty=l2, solver=saga, tol=0.0001;, score=0.859 total time= 6.1min
+[CV 2/5] END C=10, max_iter=1000, penalty=l2, solver=saga, tol=0.01;, score=0.803 total time=  40.0s
+[CV 1/5] END C=10, max_iter=1000, penalty=l2, solver=saga, tol=0.01;, score=0.804 total time=  41.0s
+[CV 3/5] END C=10, max_iter=1000, penalty=l2, solver=saga, tol=0.01;, score=0.803 total time=  40.6s
+[CV 4/5] END C=10, max_iter=1000, penalty=l2, solver=saga, tol=0.01;, score=0.804 total time=  40.8s
+[CV 2/5] END C=0.01, max_iter=5000, penalty=l2, solver=saga, tol=0.0001;, score=0.861 total time= 6.2min
+[CV 1/5] END C=0.0001, max_iter=5000, penalty=l2, solver=saga, tol=0.01;, score=0.740 total time=   4.9s
+[CV 2/5] END C=0.0001, max_iter=5000, penalty=l2, solver=saga, tol=0.01;, score=0.741 total time=   4.8s
+[CV 5/5] END C=10, max_iter=1000, penalty=l2, solver=saga, tol=0.01;, score=0.803 total time=  40.8s
+[CV 3/5] END C=0.0001, max_iter=5000, penalty=l2, solver=saga, tol=0.01;, score=0.742 total time=   5.3s
+[CV 4/5] END C=0.0001, max_iter=5000, penalty=l2, solver=saga, tol=0.01;, score=0.742 total time=   5.1s
+[CV 5/5] END C=0.0001, max_iter=5000, penalty=l2, solver=saga, tol=0.01;, score=0.742 total time=   5.0s
+[CV 3/5] END C=0.01, max_iter=5000, penalty=l2, solver=saga, tol=0.0001;, score=0.859 total time= 6.2min
+[CV 4/5] END C=0.01, max_iter=5000, penalty=l2, solver=saga, tol=0.0001;, score=0.860 total time= 6.2min
+[CV 5/5] END C=0.01, max_iter=5000, penalty=l2, solver=saga, tol=0.0001;, score=0.859 total time= 6.2min
+[CV 4/5] END C=1, max_iter=5000, penalty=l2, solver=saga, tol=0.0001;, score=0.950 total time=23.6min
+[CV 3/5] END C=1, max_iter=5000, penalty=l2, solver=saga, tol=0.0001;, score=0.951 total time=24.4min
+[CV 5/5] END C=1, max_iter=5000, penalty=l2, solver=saga, tol=0.0001;, score=0.951 total time=24.4min
+[CV 2/5] END C=1, max_iter=5000, penalty=l2, solver=saga, tol=0.0001;, score=0.951 total time=24.5min
+[CV 1/5] END C=1, max_iter=5000, penalty=l2, solver=saga, tol=0.0001;, score=0.950 total time=24.6min
+[CV 1/5] END C=0.0001, max_iter=1000, penalty=l1, solver=saga, tol=0.0001;, score=0.608 total time= 1.7min
+[CV 2/5] END C=0.0001, max_iter=1000, penalty=l1, solver=saga, tol=0.0001;, score=0.606 total time= 1.6min
+[CV 3/5] END C=0.0001, max_iter=1000, penalty=l1, solver=saga, tol=0.0001;, score=0.605 total time= 1.6min
+[CV 4/5] END C=0.0001, max_iter=1000, penalty=l1, solver=saga, tol=0.0001;, score=0.608 total time= 1.6min
+[CV 5/5] END C=0.0001, max_iter=1000, penalty=l1, solver=saga, tol=0.0001;, score=0.607 total time= 1.7min
+[CV 1/5] END C=1, max_iter=5000, penalty=l1, solver=saga, tol=0.01;, score=0.803 total time=117.8min
+[CV 4/5] END C=1, max_iter=5000, penalty=l1, solver=saga, tol=0.01;, score=0.803 total time=117.8min
+[CV 3/5] END C=1, max_iter=5000, penalty=l1, solver=saga, tol=0.01;, score=0.802 total time=118.0min
+[CV 2/5] END C=1, max_iter=5000, penalty=l1, solver=saga, tol=0.01;, score=0.802 total time=118.1min
+[CV 5/5] END C=1, max_iter=5000, penalty=l1, solver=saga, tol=0.01;, score=0.802 total time=118.0min
+[CV 3/5] END C=0.1, max_iter=10000, penalty=l1, solver=saga, tol=0.001;, score=0.863 total time=181.1min
+[CV 2/5] END C=0.1, max_iter=10000, penalty=l1, solver=saga, tol=0.001;, score=0.864 total time=181.1min
+[CV 5/5] END C=0.1, max_iter=10000, penalty=l1, solver=saga, tol=0.001;, score=0.863 total time=181.4min
+[CV 1/5] END C=0.1, max_iter=10000, penalty=l1, solver=saga, tol=0.001;, score=0.863 total time=182.3min
+[CV 4/5] END C=0.1, max_iter=10000, penalty=l1, solver=saga, tol=0.001;, score=0.865 total time=182.3min
+/root/venv/lib/python3.11/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+[CV 1/5] END C=0.001, max_iter=1000, penalty=l1, solver=saga, tol=0.0001;, score=0.750 total time=14.6min
+/root/venv/lib/python3.11/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+[CV 2/5] END C=0.001, max_iter=1000, penalty=l1, solver=saga, tol=0.0001;, score=0.750 total time=14.5min
+/root/venv/lib/python3.11/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+[CV 3/5] END C=0.001, max_iter=1000, penalty=l1, solver=saga, tol=0.0001;, score=0.750 total time=14.5min
+/root/venv/lib/python3.11/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+[CV 4/5] END C=0.001, max_iter=1000, penalty=l1, solver=saga, tol=0.0001;, score=0.753 total time=14.7min
+/root/venv/lib/python3.11/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+[CV 5/5] END C=0.001, max_iter=1000, penalty=l1, solver=saga, tol=0.0001;, score=0.750 total time=14.8min
+[CV 2/5] END C=0.1, max_iter=10000, penalty=l2, solver=saga, tol=0.0001;, score=0.930 total time=16.1min
+[CV 1/5] END C=0.1, max_iter=10000, penalty=l2, solver=saga, tol=0.0001;, score=0.928 total time=16.2min
+[CV 3/5] END C=0.1, max_iter=10000, penalty=l2, solver=saga, tol=0.0001;, score=0.930 total time=16.2min
+[CV 5/5] END C=0.1, max_iter=10000, penalty=l2, solver=saga, tol=0.0001;, score=0.930 total time=16.1min
+[CV 4/5] END C=0.1, max_iter=10000, penalty=l2, solver=saga, tol=0.0001;, score=0.930 total time=16.2min
+[CV 1/5] END C=1, max_iter=1000, penalty=l2, solver=saga, tol=0.001;, score=0.889 total time= 5.1min
+[CV 2/5] END C=1, max_iter=1000, penalty=l2, solver=saga, tol=0.001;, score=0.889 total time= 5.1min
+[CV 3/5] END C=1, max_iter=1000, penalty=l2, solver=saga, tol=0.001;, score=0.889 total time= 5.0min
+[CV 4/5] END C=1, max_iter=1000, penalty=l2, solver=saga, tol=0.001;, score=0.889 total time= 5.0min
+[CV 5/5] END C=1, max_iter=1000, penalty=l2, solver=saga, tol=0.001;, score=0.889 total time= 5.1min
+[CV 2/5] END C=10, max_iter=10000, penalty=l2, solver=saga, tol=0.001;, score=0.890 total time= 5.1min
+[CV 1/5] END C=10, max_iter=10000, penalty=l2, solver=saga, tol=0.001;, score=0.890 total time= 5.1min
+[CV 3/5] END C=10, max_iter=10000, penalty=l2, solver=saga, tol=0.001;, score=0.890 total time= 5.0min
+[CV 4/5] END C=10, max_iter=10000, penalty=l2, solver=saga, tol=0.001;, score=0.890 total time= 5.1min
+[CV 5/5] END C=10, max_iter=10000, penalty=l2, solver=saga, tol=0.001;, score=0.890 total time= 5.1min
+[CV 1/5] END C=0.1, max_iter=1000, penalty=l1, solver=saga, tol=0.01;, score=0.796 total time=28.4min
+[CV 2/5] END C=0.1, max_iter=1000, penalty=l1, solver=saga, tol=0.01;, score=0.795 total time=28.4min
+[CV 3/5] END C=0.1, max_iter=1000, penalty=l1, solver=saga, tol=0.01;, score=0.794 total time=28.3min
+[CV 4/5] END C=0.1, max_iter=1000, penalty=l1, solver=saga, tol=0.01;, score=0.797 total time=28.3min
+[CV 5/5] END C=0.1, max_iter=1000, penalty=l1, solver=saga, tol=0.01;, score=0.795 total time=28.3min
+[CV 2/5] END C=0.01, max_iter=5000, penalty=l1, solver=saga, tol=0.0001;, score=0.803 total time=36.1min
+[CV 3/5] END C=0.01, max_iter=5000, penalty=l1, solver=saga, tol=0.0001;, score=0.803 total time=36.8min
+[CV 4/5] END C=0.01, max_iter=5000, penalty=l1, solver=saga, tol=0.0001;, score=0.803 total time=36.9min
+[CV 5/5] END C=0.01, max_iter=5000, penalty=l1, solver=saga, tol=0.0001;, score=0.802 total time=40.0min
+[CV 1/5] END C=0.01, max_iter=5000, penalty=l1, solver=saga, tol=0.0001;, score=0.803 total time=41.5min
