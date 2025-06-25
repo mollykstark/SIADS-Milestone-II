@@ -11,7 +11,6 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from imblearn.over_sampling import SMOTE
 import pandas as pd
 import numpy as np
-import shap
 
 pd.options.display.float_format = '{:.3f}'.format
 
@@ -88,71 +87,36 @@ def supervised_feature_importance(clf):
         clf: A trained classifier
 
     Returns:
-        importance_df: A dataframe with all features and their importances.
+        grouped_df: A dataframe with all features and their importances.
     """
     cat_ohe = preprocessor.named_transformers_['cat'].named_steps['onehot']
     ohe_feature_names = cat_ohe.get_feature_names_out(categorical_features)
 
-    # Extract original column names correctly
-    # Each feature name is like "column_name_category", so remove the category part
     grouped_feature_indices = defaultdict(list)
     for idx, feat in enumerate(ohe_feature_names):
-        # The original column name is everything before the last underscore
-        # This handles cases where the column name has underscores
         for col in categorical_features:
             if feat.startswith(col + '_'):
                 grouped_feature_indices[col].append(idx)
                 break
 
-    # Extract model coefficients
     coeffs = np.abs(clf.coef_[0])
     ohe_coeffs = coeffs[:len(ohe_feature_names)]
     numeric_coeffs = coeffs[len(ohe_feature_names):]
 
-    # Combine one-hot importances by original column
     grouped_importances = {
         col: sum(ohe_coeffs[i] for i in indices)
         for col, indices in grouped_feature_indices.items()
     }
 
-    # Add numeric features
     for col, importance in zip(numeric_features, numeric_coeffs):
         grouped_importances[col] = importance
 
-    # Create normalized DataFrame
     grouped_df = pd.DataFrame({
         'feature': list(grouped_importances.keys()),
         'importance': list(grouped_importances.values())
     }).sort_values(by='importance', ascending=False)
 
     grouped_df['importance'] = grouped_df['importance'] / grouped_df['importance'].sum()
-
-    # cat_ohe = preprocessor.named_transformers_['cat'].named_steps['onehot']
-    # ohe_feature_names = cat_ohe.get_feature_names_out(categorical_features)
-
-    # grouped_feature_indices = defaultdict(list)
-    # for idx, feat in enumerate(ohe_feature_names):
-    #     orig_col = feat.split('_')[0]
-    #     grouped_feature_indices[orig_col].append(idx)
-
-    # coeffs = np.abs(clf.coef_[0])
-    # ohe_coeffs = coeffs[:len(ohe_feature_names)]
-    # numeric_coeffs = coeffs[len(ohe_feature_names):]
-
-    # grouped_importances = {
-    #     col: sum(ohe_coeffs[i] for i in indices)
-    #     for col, indices in grouped_feature_indices.items()
-    # }
-
-    # for col, importance in zip(numeric_features, numeric_coeffs):
-    #     grouped_importances[col] = importance
-
-    # grouped_df = pd.DataFrame({
-    #     'feature': list(grouped_importances.keys()),
-    #     'importance': list(grouped_importances.values())
-    # }).sort_values(by='importance', ascending=False)
-
-    # grouped_df['importance'] = grouped_df['importance']/sum(grouped_df['importance'])
 
     return grouped_df
 
@@ -189,59 +153,26 @@ def unsupervised_feature_importance(pca):
 
     return importance_df
 
-def shap_analysis(clf, X_shap):
-    """
-        Function to get feature importance from PCA.
-
-    Args:
-        pca: A fitted PCA object
-
-    Returns:
-        importance_df: A dataframe with all features and their importances.
-    """
-    # !!!! needs editing based on which model is best
-    ohe = preprocessor.named_transformers_['cat']
-    ohe_feature_names = ohe.get_feature_names_out(categorical_features)
-    all_feature_names = numeric_features + list(ohe_feature_names)
-
-    explainer = shap.LinearExplainer(clf, X_shap, feature_perturbation="interventional")
-    shap_values = np.array(explainer.shap_values(X_shap))
-
-    # Group SHAP values by original features
-    group_map = {}
-
-    # Numeric features (no encoding)
-    for feat in numeric_features:
-        group_map[feat] = [feat]
-
-    # Categorical features (group by prefix)
-    for cat in categorical_features:
-        group_map[cat] = [name for name in all_feature_names if name.startswith(cat + "_")]
-
-    # Sum absolute SHAP values within each group
-    grouped_shap_values = {}
-    for group, cols in group_map.items():
-        indices = [all_feature_names.index(col) for col in cols]
-        grouped_importance = np.abs(shap_values[:, indices]).mean(axis=0).sum()
-        grouped_shap_values[group] = grouped_importance
-
-    return grouped_shap_values
-
 def ablation_testing(df, new_categorical_features, percent):
     """
-        Function to get feature importance from PCA.
+        Function to do ablation testing.
 
     Args:
-        pca: A fitted PCA object
+        df: Pandas dataframe
+        new_categorical_features: A list of to use in the model
+        percent: training percent
 
     Returns:
-        importance_df: A dataframe with all features and their importances.
+        X_train, X_test, y_train, y_test: Preprocessed df data split into 
+                                          labels and features, and train and test sets.
+        X_train_resampled, y_train_resampled: X_train and y_train after 
+                                              undergoing oversampling using SMOTE.
+        X, y: Feature set after preprocessing and label set before being broken up.
     """
     preprocessor_ab = ColumnTransformer(
         transformers=[
             ("num", scaled_numeric_transformer, numeric_features),
             ("cat", categorical_transformer, new_categorical_features),
-            # ("tags", tag_transformer, tag_features)
         ]
     )
     X = df.drop('is_significant', axis=1)
